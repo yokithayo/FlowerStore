@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О нас</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
+            <div class = "container">
+                <a class="navbar-brand" href = "index.html">FlowerStore</a>
+                <button class = "navbar-toggler" type = "button" data-toggle="collapse"
+                    data-target = "#navbarResponsive">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" id = "navbarResponsive">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href = "index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href = "catalog.html">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href = "about.html">О нас</a>
+                        </li>  
+                    </ul>
+                    <ul class="navbar-nav">
+                        <a  class="nav-link text-dark" data-toggle="modal" data-target="#exampleModal">
+                            Корзина
+                        </a>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="registration.html">Регистрация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="login.html">Вход</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Main-->
+    <div class="container">
+        <main role="main" class="pb-3">
+            <!--Welcome Text-->
+            <div class = "container-fluid padding">
+                <div class = "row welcome text-center">
+                    <div class = "col-12">
+                        <h2 class = "display-4">О нас</h2>
+                    </div>
+                    <hr class = "my-4">
+                </div>
+            </div> 
+            <hr class = "my-4">
+            <div class = "container-fluid padding">
+                <div class = "row text-center padding">
+                    <div class = "col-xs-12 col-sm-6 col-md-4">
+                        <i class = "fas fa-book"></i>
+                        <div class="about">
+                            <h3>О магазине:</h3>
+                            <p>
+                                Наш цветочный бизнес был впервые основан в 2006 году. 
+                                С тех пор мы предоставляем красивые цветочные букеты, подарочные наборы и подарки для таких мероприятий, 
+                                как вечеринки, свадьбы и другие мероприятия.
+                            </p>
+                            <p>
+                                Команда магазина FlowerStore стремится предоставить вам цветы, растения и подарки высочайшего качества по доступной цене. 
+                                Каждый клиент очень важен для нас, весь наш персонал стремится обеспечить высочайший уровень обслуживания клиентов.
+                            </p>
+                        </div>
+                    </div>
+                    <div class = "col-xs-12 col-sm-6 col-md-4">
+                        <i class = "far fa-calendar"></i>
+                        <div class="about">
+                            <h3>График работы:</h3>
+                            <p>Понедельник-Пятница: 09:00 - 20:00</p>
+                            <p>Суббота-Воскресенье: 10:00 - 17:00</p>
+                        </div>
+                    </div>
+                    <div class = "col-sm-12 col-md-4">
+                        <i class = "fas fa-map"></i>
+                        <div class="about">
+                            <h3>Наше местоположение:</h3>
+                            <p>г. Тольятти, ул. Пушкина, д.1 </p>
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2a307be92fe1902899bb460115c8ec720d9e6569bcabf4a9744dcd90978c3396&amp;width=350&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <tbody>
+                            <td></td>
+                            <td>Название</td>
+                            <td>Стоимость</td>
+                            <td>Количество</td>
+                        <tr>
+                            <td><img src="img/img1.png" alt=""></td>
+                            <td><a href="#">Цветы</a></td>
+                            <td>1 руб.</td>
+                            <td>1 шт.</td>
+                        </tr>    
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Сохранить</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="wrapper"></div>
+    <!--Footer-->
+    <footer class="border-top footer">
+        <div class="container">
+            <div class = "row text-center">
+                <div class = "col-md-4">
+                    <hr class = "light">
+                    <p>Тел. 88043543555</p>
+                    <p>Почта: company@email.com</p>
+                    <p>Адрес: г. Тольятти, ул. Пушкина, д.1 </p>
+                </div>
+                <div class = "col-md-4">
+                    <hr class = "light">
+                    <h5>График работы:</h5>
+                    <hr class = "light">
+                    <p>Понедельник-Пятница: 09:00 - 20:00</p>
+                    <p>Суббота-Воскресенье: 10:00 - 17:00</p>
+                </div>
+                <div class = "col-md-4">
+                    <hr class = "light">
+                    <p><a  href = "index.html">Главная</a></p>
+                    <p><a  href = "catalog.html">Каталог</a></p>
+                    <p><a  href = "about.html">О нас</a></p>
+                </div>
+                <div class = "col-12">
+                    <hr class = "light">
+                    <h5>&copy;FlowerStore</h5>
+                </div>
+        </div>
+        </div>
+    </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>   
+</body>
+</html>
